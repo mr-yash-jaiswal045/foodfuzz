@@ -1,0 +1,159 @@
+body {
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+
+h1 {
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav .menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav .menu li {
+  margin-right: 10px;
+}
+
+nav .menu a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+nav input {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+nav button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+#recommended-recipes,
+#additional-recipes {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.recipe-card {
+  width: 250px;
+  display: inline-block;
+  float: none;
+  margin-right: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+
+}
+
+.recipe-card h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.recipe-card p {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .recipe-card {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.recipe-cardmove {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+  border-radius: 10px;
+  margin: 20px;
+  overflow: hidden;
+  animation: moveCard 3s ease-in-out infinite;
+}
+
+.image-container {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: slide 5s ease-in-out infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

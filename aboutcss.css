@@ -1,0 +1,53 @@
+footer {
+    background-color: #333;
+    color: #eee;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social {
+    margin-right: 80px;
+    align-items: center;
+}
+.social img {
+    width: 32px;
+    height: 32px;
+    padding: 30px;
+}
+body {
+    background-color: rgb(249, 230, 192);
+  }
+   
+  header {
+    background-color: rgb(249, 230, 192);
+    color: #000;
+    padding: 10px 0;
+  }
+  /* Style the anchor elements */
+.centered-links a {
+    align-self: right;
+    display: inline-block;
+    color: #000;
+    margin: 0 10px; /* Optional: Add some horizontal spacing between links */
+    text-decoration: none;
+}
+.menu {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .menu a {
+    color: #000;
+    text-decoration: none;
+  }
+  a.login-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green color */
+    color: #fff; /* White text color */
+    text-decoration: none;
+    border-radius: 15px; /* Optional: Rounded corners */
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restro Foodie Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: rgba(255, 255, 255, 0.6); /* 40% transparent white background */
+            background-image: url('loginbg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Make the body take the full viewport height */
+        }
+
+        .card {
+            background-color: rgb(249, 230, 192);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+            overflow: hidden; /* Ensure rounded corners apply to child elements */
+            width: 500px; /* Adjust the width as needed */
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .main {
+            padding: 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4285f4;
+            color: white;
+            cursor: pointer;
+        }
+
+        a {
+            color: #4285f4;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer p {
+            font-size: 12px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="container">
+            <div class="header">
+                <img src="vscode-icons_file-type-chef.png" alt="Food Fuzz Logo">
+                <h1>Welcome Back!</h1>
+            </div>
+            <div class="main">
+                <form action="/login" method="post">
+                    <h2>Log in</h2>
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="password" name="password" placeholder="Password">
+                    <label for="remember_me">
+                        <input type="checkbox" name="remember_me" id="remember_me">Remember me
+                    </label>
+                    <button type="submit">Get Started</button>
+                </form>
+                <a href="/forgot-password">Forgot Password?</a>
+                <p>New user? <a href="/signup">Sign up</a></p>
+            </div>
+            <div class="footer">
+                <p>Email: foodfuzzcare@g=help.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

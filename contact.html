@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contactcss.css">
+</head>
+<header>
+    
+    <nav>
+    <img src="vscode-icons_file-type-chef.png" alt=logo" style="float: left; margin-right: 15px;">
+    <p style="text-align: left;" style="font-family: 'Arial', sans-serif;">FOOD <br> FUZZ.</p>
+    <div class="centered-links" style="text-align: right;">
+        <a href="#">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="login-button">Login</a>
+
+          
+        </div>
+    </nav>
+  </header>
+<body>
+  <div class="contact-us" style="background-image: url('contact-bg.jpg');">
+    <h1>Contact Us</h1>
+
+    <div class="contact-form">
+      <img src="contact-image.jpg" alt="Contact Us Image">
+      <form action="/contact-us" method="post" enctype="multipart/form-data">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+        <label for="phone">Your Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+        <label for="profilePicture">Profile Picture:</label>
+        <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+        <input type="submit" value="Send Message">
+      </form>
+
+    
+
+    <div class="contact-info">
+      <h1>Contact Information</h1>
+      <p>You can also reach us by phone or email.</p>
+      <ul>
+        <li><a href="tel:+1234567890"><i class="fas fa-phone"></i> (9543674511)</a></li>
+        <li><a href="mailto:info@example.com"><i class="fas fa-envelope"></i> foodfusion@gmail.com</a></li>
+      </ul>
+      <p>Our office is located at:</p>
+      <address>
+        123 Main Street<br>
+        Anytown, CA 12345
+      </address>
+    </div>
+  </div>
+
+  <script>
+    const form = document.querySelector('form');
+    const enteredName = document.getElementById('enteredName');
+    const enteredEmail = document.getElementById('enteredEmail');
+    const enteredPhone = document.getElementById('enteredPhone');
+    const enteredMessage = document.getElementById('enteredMessage');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const formData = new FormData(form);
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const phone = formData.get('phone');
+      const message = formData.get('message');
+
+      enteredName.textContent = name;
+      enteredEmail.textContent = email;
+      enteredPhone.textContent = phone;
+      enteredMessage.textContent = message;
+    });
+  </script>
+  <footer>
+    <div class="social" style="text-align: center;"">
+        <p>Visit our social profiles:</p>
+        <div style="text-align: center;"">
+            <img src="fb.avif" alt="Facebook">
+            <img src="x.avif" alt="X">
+            <img src="insta.jpeg" alt="Instagram">
+            <img src="whatsapp.jpg" alt="Whatsapp">
+        </div>
+    </div>
+    <div class="copy" style="text-align: center;"">
+        <p>&copy; 2023 Food Fusion. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
